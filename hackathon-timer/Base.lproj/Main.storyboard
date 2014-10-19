@@ -16,35 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When does hacking begin?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkV-bh-7qs">
-                                <rect key="frame" x="16" y="130" width="209" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When does hacking begin?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkV-bh-7qs">
+                                <rect key="frame" x="40" y="64" width="520" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="96" y="89" width="209" height="21"/>
-                                </variation>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="a10-nv-VNc">
-                                <rect key="frame" x="16" y="159" width="406" height="162"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="a10-nv-VNc">
+                                <rect key="frame" x="40" y="78" width="520" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="435304553.66449898">
                                     <!--2014-10-18 05:55:53 +0000-->
                                 </date>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="118" width="368" height="162"/>
-                                </variation>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many hours long is your hackathon?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggo-LU-GJy">
-                                <rect key="frame" x="16" y="336" width="224" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ob9-1m-tsM">
+                                <rect key="frame" x="40" y="254" width="520" height="162"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many hours long is your hackathon?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggo-LU-GJy">
+                                <rect key="frame" x="40" y="240" width="520" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="319" width="318" height="21"/>
-                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBf-vt-IQZ">
-                                <rect key="frame" x="244" y="550" width="113" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBf-vt-IQZ">
+                                <rect key="frame" x="40" y="416.5" width="520" height="30"/>
                                 <state key="normal" title="LAUNCH TIMER">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -56,29 +50,30 @@
                                     <segue destination="HK8-jQ-8D7" kind="show" id="n8g-da-viV"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIH-sY-uLM">
-                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="48" y="390" width="305" height="162"/>
-                                </variation>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="YIH-sY-uLM"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="YIH-sY-uLM"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstItem="a10-nv-VNc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="5JN-jz-apC"/>
+                            <constraint firstItem="fBf-vt-IQZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="5fA-ad-JkW"/>
+                            <constraint firstItem="lkV-bh-7qs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="6JK-ie-ncF"/>
+                            <constraint firstItem="Ob9-1m-tsM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="7KK-GD-uqJ"/>
+                            <constraint firstAttribute="trailing" secondItem="fBf-vt-IQZ" secondAttribute="trailing" constant="40" id="AUT-mA-JHP"/>
+                            <constraint firstItem="fBf-vt-IQZ" firstAttribute="top" secondItem="Ob9-1m-tsM" secondAttribute="bottom" id="Ds4-Wj-bau"/>
+                            <constraint firstItem="a10-nv-VNc" firstAttribute="top" secondItem="lkV-bh-7qs" secondAttribute="bottom" id="KfM-if-ha1"/>
+                            <constraint firstItem="Ob9-1m-tsM" firstAttribute="top" secondItem="ggo-LU-GJy" secondAttribute="bottom" id="Za1-Qb-49P"/>
+                            <constraint firstAttribute="trailing" secondItem="a10-nv-VNc" secondAttribute="trailing" constant="40" id="aGD-mh-Gpl"/>
+                            <constraint firstItem="ggo-LU-GJy" firstAttribute="top" secondItem="a10-nv-VNc" secondAttribute="bottom" id="cFW-Xv-vML"/>
+                            <constraint firstAttribute="trailing" secondItem="lkV-bh-7qs" secondAttribute="trailing" constant="40" id="dhH-RP-v8C"/>
+                            <constraint firstAttribute="trailing" secondItem="ggo-LU-GJy" secondAttribute="trailing" constant="40" id="jB5-3K-CuQ"/>
+                            <constraint firstItem="lkV-bh-7qs" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="jUm-kM-CKk"/>
+                            <constraint firstItem="ggo-LU-GJy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="tpM-9Y-VwE"/>
+                            <constraint firstAttribute="trailing" secondItem="Ob9-1m-tsM" secondAttribute="trailing" constant="40" id="vpK-wX-q0T"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Hackathon Timer" id="BNS-i4-dv7"/>
                     <connections>
                         <outlet property="hackDatePicker" destination="a10-nv-VNc" id="59a-MQ-BoO"/>
-                        <outlet property="hackLengthPicker" destination="YIH-sY-uLM" id="5U5-oW-tUo"/>
+                        <outlet property="hackLengthPicker" destination="Ob9-1m-tsM" id="Voq-Hv-LRK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -97,104 +92,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCv-oR-qQX">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAE-fK-Msz">
+                                <rect key="frame" x="40" y="74" width="520" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="108" width="0.0" height="0.0"/>
-                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29:18:04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkX-Jv-joh">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="78" y="79" width="245" height="89"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y77-WR-pqx">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="98" y="151" width="44" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlP-ZY-LyS">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="253" y="151" width="56" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBY-dh-LJd">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="170" y="151" width="61" height="21"/>
-                                </variation>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bka-3p-GTu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5X6-NR-ya1">
-                                    <size key="itemSize" width="50" height="50"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wvs-Me-M0n">
+                                <rect key="frame" x="40" y="184.5" width="520" height="375.5"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="zVa-mY-SWJ">
+                                    <size key="itemSize" width="5" height="5"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ltZ-q6-2gS">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4k8-24-4Ao">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="5" height="5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </collectionViewCell>
                                 </cells>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="199" width="368" height="402"/>
-                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="HK8-jQ-8D7" id="1SR-i6-dCe"/>
+                                    <outlet property="delegate" destination="HK8-jQ-8D7" id="luV-Qi-tux"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="SCv-oR-qQX"/>
-                                <exclude reference="xkX-Jv-joh"/>
-                                <exclude reference="Y77-WR-pqx"/>
-                                <exclude reference="JlP-ZY-LyS"/>
-                                <exclude reference="RBY-dh-LJd"/>
-                                <exclude reference="Bka-3p-GTu"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="SCv-oR-qQX"/>
-                                <include reference="xkX-Jv-joh"/>
-                                <include reference="Y77-WR-pqx"/>
-                                <include reference="JlP-ZY-LyS"/>
-                                <include reference="RBY-dh-LJd"/>
-                                <include reference="Bka-3p-GTu"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cAE-fK-Msz" secondAttribute="trailing" constant="40" id="0P8-L7-e2D"/>
+                            <constraint firstItem="ODW-PW-jd8" firstAttribute="top" secondItem="Wvs-Me-M0n" secondAttribute="bottom" constant="40" id="73g-50-H2M"/>
+                            <constraint firstItem="cAE-fK-Msz" firstAttribute="top" secondItem="v2P-iN-67P" secondAttribute="bottom" constant="10" id="UU4-nT-yMU"/>
+                            <constraint firstItem="cAE-fK-Msz" firstAttribute="leading" secondItem="7FK-d3-NEt" secondAttribute="leading" constant="40" id="Xtx-VW-uqq"/>
+                            <constraint firstItem="Wvs-Me-M0n" firstAttribute="top" secondItem="cAE-fK-Msz" secondAttribute="bottom" constant="60" id="kU6-fv-ygD"/>
+                            <constraint firstAttribute="trailing" secondItem="Wvs-Me-M0n" secondAttribute="trailing" constant="40" id="n8v-wf-odD"/>
+                            <constraint firstItem="Wvs-Me-M0n" firstAttribute="leading" secondItem="7FK-d3-NEt" secondAttribute="leading" constant="40" id="wI4-aM-nEn"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="timerLabel" destination="xkX-Jv-joh" id="wCL-hg-XMm"/>
+                        <outlet property="timerCollection" destination="Wvs-Me-M0n" id="QtR-DD-XAX"/>
+                        <outlet property="timerLabel" destination="cAE-fK-Msz" id="JiU-mV-Mn6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RuJ-st-pQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2391" y="588"/>
+            <point key="canvasLocation" x="2112" y="754"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C6M-Rl-Kum">

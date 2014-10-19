@@ -9,17 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-                            
-    @IBOutlet weak var timerLabel: UILabel!
+    
     @IBOutlet weak var hackDatePicker: UIDatePicker!
     @IBOutlet weak var hackLengthPicker: UIPickerView!
     @IBAction func launchButton(sender: UIButton) {
         endDate = calcEndDate()
-        println(endDate!.description)
-        let timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateTimer", userInfo: nil, repeats: true)
-        
+        timeManager.endDate = endDate
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let destination = segue.destinationViewController as? TimerController {
+            let timer = NSTimer.scheduledTimerWithTimeInterval(1, target: destination, selector: "updateTimer", userInfo: nil, repeats: true)
+        }
+    }
+    
     func calcEndDate() -> NSDate {
         let hackDate = hackDatePicker.date
 
@@ -47,8 +50,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         hackLengths = [12, 24, 36]
         hackLength = hackLengths![0]
-        
-        updateTimer()
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,9 +76,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         println(hackLengths![row])
     }
     
-    func updateTimer() {
-        println("updated")
-    }
 
 }
 
