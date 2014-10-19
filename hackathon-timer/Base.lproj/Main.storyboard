@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="1206" y="616.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Timer Controller-->
         <scene sceneID="eSt-6W-ofd">
             <objects>
-                <viewController id="HK8-jQ-8D7" sceneMemberID="viewController">
+                <viewController id="HK8-jQ-8D7" customClass="TimerController" customModule="hackathon_timer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v2P-iN-67P"/>
                         <viewControllerLayoutGuide type="bottom" id="ODW-PW-jd8"/>
@@ -188,10 +188,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="timerLabel" destination="xkX-Jv-joh" id="wCL-hg-XMm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RuJ-st-pQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2004" y="568.5"/>
+            <point key="canvasLocation" x="2391" y="588"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C6M-Rl-Kum">

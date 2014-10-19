@@ -10,11 +10,13 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
                             
+    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var hackDatePicker: UIDatePicker!
     @IBOutlet weak var hackLengthPicker: UIPickerView!
     @IBAction func launchButton(sender: UIButton) {
-        var endDate = calcEndDate()
-        println(endDate.description)
+        endDate = calcEndDate()
+        println(endDate!.description)
+        let timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateTimer", userInfo: nil, repeats: true)
         
     }
 
@@ -32,6 +34,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var hackLengths : Array<Int>?
     var hackStart : NSDate?
     var hackLength : Int?
+    var endDate : NSDate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +47,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         hackLengths = [12, 24, 36]
         hackLength = hackLengths![0]
+        
+        updateTimer()
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +72,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(hackLengthPicker: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         hackLength = hackLengths![row]
         println(hackLengths![row])
+    }
+    
+    func updateTimer() {
+        println("updated")
     }
 
 }
