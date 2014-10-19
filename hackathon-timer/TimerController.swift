@@ -1,5 +1,5 @@
 //
-//  TimerViewController.swift
+//  TimerController.swift
 //  hackathon-timer
 //
 //  Created by Arjun Sarode on 10/18/14.
@@ -8,8 +8,10 @@
 
 import UIKit
 
-class TimerViewController: UIViewController {
+class TimerController: UIViewController {
 
+    @IBOutlet weak var timerLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

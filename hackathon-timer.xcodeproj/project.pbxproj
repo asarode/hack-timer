@@ -12,7 +12,8 @@
 		0E10B62719F236C70015026C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E10B62519F236C70015026C /* Main.storyboard */; };
 		0E10B62919F236C70015026C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E10B62819F236C70015026C /* Images.xcassets */; };
 		0E10B63519F236C70015026C /* hackathon_timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10B63419F236C70015026C /* hackathon_timerTests.swift */; };
-		0E87B5B819F31988005B77AC /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E87B5B719F31988005B77AC /* TimerViewController.swift */; };
+		0E87B5BA19F32DE1005B77AC /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E87B5B919F32DE1005B77AC /* TimerController.swift */; };
+		0E87B5C619F32F8C005B77AC /* TimeMangager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E87B5C519F32F8C005B77AC /* TimeMangager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,8 @@
 		0E10B62E19F236C70015026C /* hackathon-timerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hackathon-timerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E10B63319F236C70015026C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E10B63419F236C70015026C /* hackathon_timerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathon_timerTests.swift; sourceTree = "<group>"; };
-		0E87B5B719F31988005B77AC /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		0E87B5B919F32DE1005B77AC /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		0E87B5C519F32F8C005B77AC /* TimeMangager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeMangager.swift; path = ../TimeMangager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +81,9 @@
 			children = (
 				0E10B62119F236C70015026C /* AppDelegate.swift */,
 				0E10B62319F236C70015026C /* ViewController.swift */,
+				0E87B5C519F32F8C005B77AC /* TimeMangager.swift */,
+				0E87B5B919F32DE1005B77AC /* TimerController.swift */,
 				0E10B62519F236C70015026C /* Main.storyboard */,
-				0E87B5B719F31988005B77AC /* TimerViewController.swift */,
 				0E10B62819F236C70015026C /* Images.xcassets */,
 				0E10B61F19F236C70015026C /* Supporting Files */,
 			);
@@ -212,8 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E10B62419F236C70015026C /* ViewController.swift in Sources */,
-				0E87B5B819F31988005B77AC /* TimerViewController.swift in Sources */,
 				0E10B62219F236C70015026C /* AppDelegate.swift in Sources */,
+				0E87B5C619F32F8C005B77AC /* TimeMangager.swift in Sources */,
+				0E87B5BA19F32DE1005B77AC /* TimerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
